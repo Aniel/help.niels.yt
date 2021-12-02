@@ -67,11 +67,14 @@
       text-align: center;
       padding: 5px;
       margin: 5px;
+      margin-left: 0;
       position: absolute;
       z-index: 1;
       top: 100%;
+      bottom: auto;
       left: 50%;
-      margin-left: -150%;
+      right: auto;
+      transform-origin: center top;
       opacity: 0;
       transition: opacity 1s;
     }
@@ -80,7 +83,6 @@
       content: " ";
       position: absolute;
       bottom: 100%;
-      /* At the top of the tooltip */
       left: 50%;
       margin-left: -5px;
       border-width: 5px;
@@ -91,6 +93,7 @@
     .tooltip:hover .tooltiptext {
       visibility: visible;
       opacity: 1;
+      transform: translateX(-50%) scale(1) !important;
     }
   </style>
   <title>Support from Niels</title>
